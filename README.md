@@ -194,72 +194,45 @@ lib
 
 # 🖼 Application Screens
 
-## Dashboard
+# 📸 Application Screens
 
-![Dashboard](screenshots/dashboard.jpeg)
+<table>
+<tr>
+<td align="center"><b>Dashboard</b></td>
+<td align="center"><b>Customers</b></td>
+<td align="center"><b>Expense</b></td>
+</tr>
 
-## Customers
+<tr>
+<td><img src="screenshots/dashboard.jpeg" width="250"/></td>
+<td><img src="screenshots/customer.jpeg" width="250"/></td>
+<td><img src="screenshots/expense.jpeg" width="250"/></td>
+</tr>
 
-![Customers](screenshots/customer.jpeg)
+<tr>
+<td align="center"><b>Invoice</b></td>
+<td align="center"><b>Billing</b></td>
+<td align="center"><b>Stock</b></td>
+</tr>
 
+<tr>
+<td><img src="screenshots/invoice.jpeg" width="250"/></td>
+<td><img src="screenshots/bill.png" width="250"/></td>
+<td><img src="screenshots/stock.jpeg" width="250"/></td>
+</tr>
 
+<tr>
+<td align="center"><b>Settings</b></td>
+<td align="center"><b>Calculator</b></td>
+<td align="center"><b>QR Payments</b></td>
+</tr>
 
----
-
-## Expense
-
-
-![Expense](screenshots/expense.jpeg)
-
-
----
-
-## invoice
-
-
-![invoice](screenshots/invoice.jpeg)
-
-
----
-
-## Billing
-
-
-![Billing](screenshots/bill.png)
-
-
----
-
-
-## stock
-
-![stock](screenshots/stock.jpeg)
-
-
----
-
-## Settings
-
-
-![Settings](screenshots/settings.png)
-
-
----
-
-## Calculator
-
-![Calculator](screenshots/calculator.png)
-
-
----
-
-## QR Payments
-
-
-![QR](screenshots/qr.jpeg)
-
-
----
+<tr>
+<td><img src="screenshots/settings.png" width="250"/></td>
+<td><img src="screenshots/calculator.png" width="250"/></td>
+<td><img src="screenshots/qr.jpeg" width="250"/></td>
+</tr>
+</table>
 
 # ⚙ Getting Started
 
