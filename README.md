@@ -1,8 +1,5 @@
 # 💙 BlueKhata – Smart Business Ledger
 
-<p align="center">
-  <img src="assets/images/logo.png" width="140">
-</p>
 
 <p align="center">
 A modern, offline-ready business ledger application built with <b>Flutter</b> and <b>Supabase</b> to help small businesses manage customers, cash flow, inventory, billing, expenses, staff, and financial records from a single platform.
@@ -199,75 +196,68 @@ lib
 
 ## Dashboard
 
-```
 ![Dashboard](screenshots/dashboard.jpeg)
-```
-
----
 
 ## Customers
 
-```
 ![Customers](screenshots/customer.jpeg)
-```
 
----
+
 
 ---
 
 ## Expense
 
-```
+
 ![Expense](screenshots/expense.jpeg)
-```
+
 
 ---
 
 ## invoice
 
-```
+
 ![invoice](screenshots/invoice.jpeg)
-```
+
 
 ---
 
 ## Billing
 
-```
-![Billing](screenshots/bill.jpeg)
-```
+
+![Billing](screenshots/bill.png)
+
 
 ---
 
 
 ## stock
-```
+
 ![stock](screenshots/stock.jpeg)
-```
+
 
 ---
 
 ## Settings
 
-```
-![Settings](screenshots/settings.jpeg)
-```
+
+![Settings](screenshots/settings.png)
+
 
 ---
 
 ## Calculator
 
-```
-![Calculator](screenshots/calculator.jpeg)
-```
+![Calculator](screenshots/calculator.png)
+
 
 ---
 
 ## QR Payments
 
-```
+
 ![QR](screenshots/qr.jpeg)
-```
+
 
 ---
 
