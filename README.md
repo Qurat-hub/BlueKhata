@@ -213,13 +213,6 @@ lib
 
 ---
 
-
-## Cash Book
-
-```
-![Cashbook](screenshots/cashbook.jpeg)
-```
-
 ---
 
 ## Expense
