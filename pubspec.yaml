@@ -1,0 +1,80 @@
+name: bluekhata
+description: "BlueKhata — Smart Business Ledger. Powered by Zenvyro Labs."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Backend
+  supabase_flutter: ^2.5.6
+
+  # State management (manual Provider / StateNotifierProvider — no codegen)
+  flutter_riverpod: ^2.5.1
+
+  # Routing
+  go_router: ^14.2.0
+
+  # Networking
+  dio: ^5.4.3+1
+
+  # classes with toMap()/fromMap(); JSON-encoded payloads (e.g. the
+  # offline sync queue) are stored as strings in generic Hive boxes.
+  # See MIGRATION_NOTES.md for why hive_generator was removed.
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.3
+  flutter_secure_storage: ^9.2.2
+
+  # Offline / connectivity
+  connectivity_plus: ^6.0.3
+
+  # Documents / export
+  pdf: ^3.11.0
+  printing: ^5.13.1
+  excel: ^4.0.6
+
+  # QR / Barcode
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^5.1.1
+
+  # Notifications
+  firebase_core: ^3.3.0
+  firebase_messaging: ^15.0.3
+#  flutter_local_notifications: ^17.2.1
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_slidable: ^3.1.1
+  cached_network_image: ^3.3.1
+  fl_chart: ^0.68.0
+  shimmer: ^3.0.0
+  lottie: ^3.1.2
+
+  # Utils
+  intl: ^0.19.0
+  permission_handler: ^11.3.1
+  local_auth: ^2.3.0
+  uuid: ^4.4.0
+  logger: ^2.4.0
+  equatable: ^2.0.5
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/zenvyro_labs_logo.png
+    - assets/images/
+  fonts: []
