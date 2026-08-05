@@ -229,7 +229,7 @@ lib
 
 <tr>
 <td><img src="screenshots/settings.png" width="250"/></td>
-<td><img src="screenshots/calculator.png" width="250"/></td>
+<td><img src="screenshots/staff.jpeg" width="250"/></td>
 <td><img src="screenshots/qr.jpeg" width="250"/></td>
 </tr>
 </table>
