@@ -223,7 +223,7 @@ lib
 
 <tr>
 <td align="center"><b>Settings</b></td>
-<td align="center"><b>Calculator</b></td>
+<td align="center"><b>Staff</b></td>
 <td align="center"><b>QR Payments</b></td>
 </tr>
 
