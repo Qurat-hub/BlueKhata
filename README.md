@@ -1,143 +1,370 @@
-# BlueKhata — Smart Business Ledger
+# 💙 BlueKhata – Smart Business Ledger
 
-A modern, Blue-themed bookkeeping app built with **Flutter + Supabase**.
-Powered by Zenvyro Labs.
+<p align="center">
+  <img src="assets/images/logo.png" width="140">
+</p>
 
-This repo is a **production-grade starting scaffold**, not a finished
-19-module app — see [Module Status](#module-status) for what's wired
-end-to-end today vs. what's next.
+<p align="center">
+A modern, offline-ready business ledger application built with <b>Flutter</b> and <b>Supabase</b> to help small businesses manage customers, cash flow, inventory, billing, expenses, staff, and financial records from a single platform.
+</p>
 
----
+<p align="center">
 
-## What's included in this build pass
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart)
+![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E?logo=supabase)
+![Riverpod](https://img.shields.io/badge/Riverpod-State%20Management-blue)
+![GoRouter](https://img.shields.io/badge/Navigation-GoRouter-red)
+![Material3](https://img.shields.io/badge/UI-Material%203-green)
 
-- ✅ Clean/feature-first architecture (`core/` + `features/<name>/{data,domain,presentation}`)
-- ✅ Riverpod state management, Go Router navigation with auth redirects
-- ✅ Material 3 Blue Design System theme (light + dark)
-- ✅ Supabase phone/OTP authentication
-- ✅ Business creation, listing, and switching (multi-business support)
-- ✅ Customer management (CRUD, search, favorites)
-- ✅ Ledger module: credit/debit entries with **server-side running balance**
-  (Postgres triggers keep `customers.current_balance` and
-  `ledger_entries.balance_after` correct and race-safe)
-- ✅ Dashboard: today's credit/cash summary, quick actions, recent customers
-- ✅ Offline-first scaffolding: Hive local cache boxes + a sync queue
-  (`SyncQueueService`) ready to be wired into repositories
-- ✅ Full SQL schema (4 migrations) covering **every module in the spec**
-  — ledger, cashbook, bank book, inventory, billing/invoices, staff,
-  reminders, notifications, admin content, audit logs, soft-delete,
-  backups — with Row Level Security on every table
-- ✅ Zenvyro Labs branding wired into Splash + Dashboard footer (see `BRANDING.md`)
-
-## Not yet built (schema exists, UI/repos pending)
-
-Cash Book UI, Bank Book UI, Inventory & Barcode scanning, Billing/Invoice
-PDF generation, Staff/Payroll, Reports & Analytics charts, Reminder
-scheduling + FCM push, Backup/Restore UI, full Settings (App Lock,
-biometrics, multi-language runtime switching), Business Card generator,
-and the separate **Flutter Web Super Admin Panel**. The SQL for all of
-these already exists in `supabase/migrations/`, so each is a matter of
-adding a `features/<module>` folder that follows the same
-repository → provider → screen pattern as `customers`/`ledger`.
+</p>
 
 ---
 
-## Getting started
+# 📱 Overview
 
-### 1. Prerequisites
-- Flutter SDK (stable channel)
-- A Supabase project ([supabase.com](https://supabase.com))
+BlueKhata is a professional bookkeeping solution designed for shopkeepers, startups, freelancers, and small businesses.
 
-### 2. Install dependencies
+The application allows users to maintain customer ledgers, monitor cash transactions, track inventory, create invoices, manage expenses, organize staff, and monitor business performance through a clean and intuitive interface.
+
+The project follows **Clean Architecture**, **Repository Pattern**, and a **Feature-first structure**, making it highly scalable and production-ready.
+
+---
+
+# ✨ Features
+
+## Authentication
+
+- Phone Authentication
+- OTP Login
+- Secure Session Management
+- Forgot Password
+- Language Selection
+- Splash Screen
+
+---
+
+## Business Management
+
+- Create Business
+- Switch Businesses
+- Multi-business Support
+- Business Profiles
+
+---
+
+## Dashboard
+
+- Business Overview
+- Today's Summary
+- Recent Customers
+- Quick Actions
+- Beautiful Material 3 Interface
+- Navigation Dashboard
+
+---
+
+## Customer Management
+
+- Add Customer
+- Edit Customer
+- Delete Customer
+- Customer Ledger
+- Customer Details
+- Search Customers
+- Favourite Customers
+
+---
+
+## Ledger
+
+- Credit Entries
+- Debit Entries
+- Automatic Balance Calculation
+- Running Balance
+- Transaction History
+
+---
+
+## Cash Book
+
+- Cash In
+- Cash Out
+- Cash Reports
+
+---
+
+## Expense Management
+
+- Expense Records
+- Expense Categories
+- Expense Reports
+
+---
+
+## Inventory
+
+- Product Management
+- Stock Records
+- Product Details
+
+---
+
+## Billing
+
+- Invoice Creation
+- Invoice Details
+- Invoice List
+
+---
+
+## Staff Management
+
+- Employee Management
+- Attendance
+- Staff Details
+
+---
+
+## Utilities
+
+- Business Calculator
+- QR Payment Screen
+- Settings
+- Coming Soon Framework
+
+---
+
+## Built-in Architecture
+
+- Feature-first Architecture
+- Repository Pattern
+- Riverpod State Management
+- GoRouter Navigation
+- Material 3 Design
+- Supabase Backend
+- Hive Local Storage
+- Offline-ready Structure
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|----------|
+| Flutter | Cross-platform Framework |
+| Dart | Programming Language |
+| Supabase | Backend & Authentication |
+| PostgreSQL | Database |
+| Riverpod | State Management |
+| GoRouter | Navigation |
+| Hive | Local Storage |
+| Material 3 | UI Design |
+
+---
+
+# 📂 Project Structure
+
+```
+lib
+│
+├── core
+│   ├── config
+│   ├── routes
+│   ├── services
+│   ├── shared
+│   └── theme
+│
+├── features
+│   ├── authentication
+│   ├── business
+│   ├── dashboard
+│   ├── customers
+│   ├── ledger
+│   ├── cashbook
+│   ├── expense
+│   ├── stock
+│   ├── billing
+│   ├── staff
+│   ├── settings
+│   ├── calculator
+│   └── qr
+│
+└── main.dart
+```
+
+---
+
+# 🖼 Application Screens
+
+## Dashboard
+
+```
+![Dashboard](screenshots/dashboard.jpeg)
+```
+
+---
+
+## Customers
+
+```
+![Customers](screenshots/customer.jpeg)
+```
+
+---
+
+
+## Cash Book
+
+```
+![Cashbook](screenshots/cashbook.jpeg)
+```
+
+---
+
+## Expense
+
+```
+![Expense](screenshots/expense.jpeg)
+```
+
+---
+
+## invoice
+
+```
+![invoice](screenshots/invoice.jpeg)
+```
+
+---
+
+## Billing
+
+```
+![Billing](screenshots/bill.jpeg)
+```
+
+---
+
+
+## stock
+```
+![stock](screenshots/stock.jpeg)
+```
+
+---
+
+## Settings
+
+```
+![Settings](screenshots/settings.jpeg)
+```
+
+---
+
+## Calculator
+
+```
+![Calculator](screenshots/calculator.jpeg)
+```
+
+---
+
+## QR Payments
+
+```
+![QR](screenshots/qr.jpeg)
+```
+
+---
+
+# ⚙ Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/USERNAME/BlueKhata.git
+```
+
+---
+
+## Install Packages
+
 ```bash
 flutter pub get
 ```
 
-### 3. Set up Supabase
-Run the SQL migrations in order against your Supabase project (SQL Editor,
-or `supabase db push` if using the Supabase CLI):
+---
 
-```
-supabase/migrations/0001_core_schema.sql
-supabase/migrations/0002_ledger_cashbook_bank.sql
-supabase/migrations/0003_inventory_billing.sql
-supabase/migrations/0004_staff_notifications_audit.sql
-```
+## Configure Supabase
 
-In your Supabase project dashboard, enable **Phone Auth** (Authentication →
-Providers → Phone) and configure an SMS provider (Twilio, MessageBird, etc.)
-for OTP delivery.
+Update your configuration with:
 
-### 4. Run the app
-Supabase credentials are injected via `--dart-define` (never hardcoded):
+- Project URL
+- Anonymous Key
+
+---
+
+## Run Application
 
 ```bash
-flutter run \
-  --dart-define=SUPABASE_URL=https://YOUR_PROJECT.supabase.co \
-  --dart-define=SUPABASE_ANON_KEY=YOUR_ANON_KEY
-```
-
-Tip: create a `run_dev.sh` (gitignored) wrapping this command so you don't
-retype it. Do not commit real keys.
-
-### 5. Code generation (once you add Freezed/Hive models)
-```bash
-dart run build_runner build --delete-conflicting-outputs
+flutter run
 ```
 
 ---
 
-## Architecture
+## Build APK
 
-```
-lib/
-  core/
-    config/        # AppConfig — env-driven constants, branding strings
-    theme/          # AppColors, AppTheme, AppSpacing (Blue Design System)
-    routes/         # go_router config + AppRoutes path constants
-    services/       # SupabaseService, LocalStorageService, SyncQueueService
-    shared/widgets/ # AppButton, AppCard, state widgets, BrandingFooter
-  features/
-    authentication/ # phone/OTP login, splash, language selection
-    business/       # create/select/switch businesses
-    customers/       # customer CRUD + search
-    ledger/         # credit/debit entries, running balance
-    dashboard/      # home tab, bottom nav shell
+```bash
+flutter build apk --release
 ```
 
-Each feature follows **Repository Pattern + Clean Architecture**:
-`data/repositories` (Supabase calls) → `presentation/providers` (Riverpod
-`StateNotifier`/`FutureProvider`) → `presentation/screens` (UI only, no
-business logic). This is the pattern to replicate for every remaining
-module (cashbook, bank, inventory, billing, staff, reports, admin).
+---
 
-## Database design notes
+# Database
 
-- Every table has `created_at`, soft-delete flags (`is_deleted`/`deleted_at`
-  or `is_archived`), and RLS scoped by business membership via the
-  `is_business_member(business_id)` helper function.
-- `ledger_entries` balance is **not** computed client-side — a trigger
-  (`apply_ledger_entry_balance`) atomically updates `customers.current_balance`
-  on insert, and `reverse_ledger_entry_balance` reverses it on soft-delete.
-  This avoids race conditions from concurrent devices/offline sync.
-- `products.stock_quantity` is similarly maintained by `inventory_logs`
-  triggers rather than direct writes, so stock history is always auditable.
+Supabase is used as the backend.
 
-## Branding
+Features include:
 
-See [`BRANDING.md`](./BRANDING.md) — "Powered by Zenvyro Labs" is required
-on the Splash Screen and Dashboard, enforced via the reusable
-`BrandingFooter` widget. Do not remove.
+- Authentication
+- PostgreSQL Database
+- Row Level Security
+- Realtime Support
+- SQL Migrations
 
-## Suggested next steps
+---
 
-1. Wire `SyncQueueService` into the customer/ledger repositories for true
-   offline-first writes (queue on `SocketException`, flush on
-   `connectivity_plus` reconnect).
-2. Build the Cash Book and Bank Book features (schema is ready).
-3. Add the Invoice module + PDF export using the `pdf`/`printing` packages.
-4. Stand up the Flutter Web Super Admin Panel as a second app target
-   (`lib_admin/` or a separate package) using the same Supabase project
-   with `role = 'super_admin'` gated RLS policies already in migration 0004.
-5. Integrate Firebase (FCM) for the notification types already modeled in
-   `public.notifications`.
+# Future Improvements
+
+- Barcode Scanner
+- PDF Invoice Export
+- Reports & Analytics
+- Firebase Notifications
+- Backup & Restore
+- Multi-language Support
+- Dark Mode Customization
+- Business Card Generator
+- Flutter Web Admin Panel
+
+---
+
+# Powered By
+
+**Zenvyro Labs**
+
+---
+
+# Author
+
+**Qurat Ul Ain**
+
+BS Information Technology
+
+Flutter Developer • UI/UX Designer
+
+---
+
+# License
+
+This project is intended for educational and portfolio purposes.
