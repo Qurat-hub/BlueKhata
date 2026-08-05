@@ -228,9 +228,29 @@ lib
 </tr>
 
 <tr>
-<td><img src="screenshots/settings.png" width="250"/></td>
+<td><img src="screenshots/setting.jpeg" width="250"/></td>
 <td><img src="screenshots/staff.jpeg" width="250"/></td>
 <td><img src="screenshots/qr.jpeg" width="250"/></td>
+</tr>
+
+<tr>
+<td align="center"><b>Bill Book</b></td>
+<td align="center"><b>Invoice</b></td>
+<td align="center"><b>Cashboo</b></td>
+</tr>
+
+<tr>
+<td><img src="screenshots/billbook.jpeg" width="250"/></td>
+<td><img src="screenshots/invoiceview.jpeg" width="250"/></td>
+<td><img src="screenshots/cashbook.jpeg" width="250"/></td>
+</tr>
+
+<tr>
+<td align="center"><b>Calculator</b></td>
+</tr>
+
+<tr>
+<td><img src="screenshots/calculators.jpeg" width="250"/></td>
 </tr>
 </table>
 
